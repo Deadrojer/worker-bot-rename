@@ -18,10 +18,10 @@ class Config:
     API_HASH = os.environ.get("API_HASH", "a06fa97d5a853ec2da79015b11335a17")
 
     # Each worker has its own Bot Token
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8853262609:AAHjSk0bpp6M_nh5JR3XBy2U-9LtOCDPacU")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 
     # ── Worker identity ───────────────────────────────────────────────────────
-    WORKER_ID          = os.environ.get("WORKER_ID", "worker_01")
+    WORKER_ID          = os.environ.get("WORKER_ID", "")
     WORKER_CONCURRENCY = int(os.environ.get("WORKER_CONCURRENCY", "3"))
     WORKER_VERSION     = os.environ.get("WORKER_VERSION", "1.0.0")
 
@@ -30,7 +30,7 @@ class Config:
     WORKER_OUTPUT_CHANNEL_ID = int(os.environ.get("WORKER_OUTPUT_CHANNEL_ID", "-1004488266962"))
 
     # ── Database ──────────────────────────────────────────────────────────────
-    MONGO_URI = os.environ.get("MONGO_URI", "mongodb://devheroku69_db_user:q7Prl5Mczqx1RHnV@ac-qc1reu1-shard-00-00.em2s7v5.mongodb.net:27017,ac-qc1reu1-shard-00-01.em2s7v5.mongodb.net:27017,ac-qc1reu1-shard-00-02.em2s7v5.mongodb.net:27017/?ssl=true&replicaSet=atlas-5roaph-shard-0&authSource=admin&appName=Devheroku69")
+    MONGO_URI = os.environ.get("MONGO_URI", "")
     DB_NAME   = os.environ.get("DB_NAME", "DistributedRenameBot")
 
     # ── Heartbeat ─────────────────────────────────────────────────────────────

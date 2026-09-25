@@ -1,0 +1,21 @@
+# ── Telegram ──────────────────────────────────────────────────────────────────
+pyrogram==2.0.106
+TgCrypto              # C-based crypto — required by Pyrogram for speed
+
+# ── Database ──────────────────────────────────────────────────────────────────
+motor                 # Async MongoDB driver (for statistics writes only)
+dnspython             # Required by motor to resolve mongodb+srv:// URIs
+
+# ── Media processing ──────────────────────────────────────────────────────────
+# NOTE: FFmpeg and FFprobe are SYSTEM BINARIES installed via Dockerfile:
+#         apt-get install -y ffmpeg
+#       They are NOT pip packages.
+Pillow                # Image resize — thumbnail fix_thumb()
+hachoir               # Python-based media duration fallback (no subprocess needed)
+
+# ── HTTP / async I/O ─────────────────────────────────────────────────────────
+aiohttp               # Health-check server + ImgBB thumbnail download + Telegraph
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+pytz                  # Timezone support
+psutil
